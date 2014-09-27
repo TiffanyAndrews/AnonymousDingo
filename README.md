@@ -1,4 +1,4 @@
 AnonymousDingo
 ==============
 
-Rails app for Goon Club meetup
+Rails app for organizing Goon Club mini-hacks & study sessions
