@@ -14,11 +14,19 @@ class EventsController < ApplicationController
       redirect_to event, notice: "Your Goon event has been created. Goon on"
     end
   end
-  
+
   def show
     @event = Event.find(params[:id])
   end
-  
+
+  def rsvps
+    puts "*" * 30
+    puts params
+    puts "^" * 30
+  end
+
+  def message
+  end
 
   private
   def event_params
