@@ -5,7 +5,7 @@ class SMS
     begin
       client.account.messages.create(:body => new_message,
                                      :to => phone_number,
-                                     :from => ENV['ATV_PHONE_NUMBER'])
+                                     :from => ENV['TWILIO_PHONE_NUMBER'])
     rescue ERROR => e
       Rails.logger.error "Failed to send the sms to #{phone_number}. " + e.message
     end
