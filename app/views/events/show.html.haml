@@ -1,0 +1,13 @@
+=flash[:notice]
+
+%h1 
+  Event:
+  =@event.name
+%h1 
+  Location:
+  =@event.location
+%h2 
+  Date Created:
+  =@event.created_at
+
+=link_to 'new', root_url
