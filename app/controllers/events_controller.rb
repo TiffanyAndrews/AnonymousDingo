@@ -11,7 +11,7 @@ class EventsController < ApplicationController
       Goon.all.each do |goon|
         sms_client.deliver(goon.phone, message)
       end
-      redirect_to root_path
+      redirect_to root_path, notice: "Your Goon event has been created. Goon on"
     end
   end
 
