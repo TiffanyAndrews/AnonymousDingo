@@ -52,6 +52,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: AnonymousDingo_production
+  database: dagtaa4uv6immk
   pool: 5
+  username: whqdxlibmvmpob
+  password: bYeiXji-aMYC00_SDKxHnl3exF
 
