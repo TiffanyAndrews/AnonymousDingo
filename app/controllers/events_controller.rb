@@ -8,7 +8,7 @@ class EventsController < ApplicationController
     if event
       message = Message.new_event(event)
       sms_client = SMS.new
-      Goon.all.each do |goon|
+      Goons.all.each do |goon|
         sms_client.deliver(goon.phone, message)
       end
       redirect_to root_path

@@ -1,12 +1,6 @@
 class SMS
   ERROR = Twilio::REST::RequestError
 
-  # attr_reader :phone_number
-
-  # def initialize(phone_number)
-  #   @phone_number = phone_number
-  # end
-
   def deliver(phone_number, new_message)
     begin
       client.account.messages.create(:body => new_message,
