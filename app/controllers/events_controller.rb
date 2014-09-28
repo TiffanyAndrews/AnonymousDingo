@@ -25,9 +25,6 @@ class EventsController < ApplicationController
     puts "^" * 30
   end
 
-  def message
-  end
-
   private
   def event_params
     params.require(:event).permit(:location, :name)
